@@ -1,0 +1,46 @@
+{
+  "manifest": {
+    "name": "@jupyter-widgets/output",
+    "version": "4.0.0-alpha.0",
+    "description": "Jupyter widget wrapping cell output",
+    "bugs": {
+      "url": "https://github.com/jupyter-widgets/ipywidgets/issues"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/jupyter-widgets/ipywidgets.git"
+    },
+    "license": "BSD-3-Clause",
+    "author": {
+      "name": "Project Jupyter"
+    },
+    "files": ["lib/**/*.d.ts", "lib/**/*.js"],
+    "main": "lib/index.js",
+    "typings": "lib/index.d.ts",
+    "scripts": {
+      "build": "npm run build:src",
+      "build:src": "tsc --build",
+      "clean": "rimraf lib && rimraf tsconfig.tsbuildinfo",
+      "prepublish": "npm run clean && npm run build",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "dependencies": {
+      "@jupyter-widgets/base": "file:../../ipywidgets/packages/base"
+    },
+    "devDependencies": {
+      "rimraf": "^2.6.1",
+      "typescript": "~3.7.4"
+    },
+    "_registry": "npm",
+    "_loc": "C:\\Users\\t-karora\\AppData\\Local\\Yarn\\Cache\\v6\\npm-@jupyter-widgets-output-4.0.0-alpha.0-b90af630-9461-40a5-b0ca-59d9c226dc09-1597707371979\\node_modules\\@jupyter-widgets\\output\\package.json"
+  },
+  "artifacts": [],
+  "remote": {
+    "type": "copy",
+    "registry": "npm",
+    "hash": "bbe0381c-1209-453d-a6a7-0d34d41f8af9-1597774253782",
+    "reference": "C:\\Users\\t-karora\\Desktop\\ipywidgets\\node_modules\\@jupyter-widgets\\output"
+  },
+  "registry": "npm",
+  "hash": "bbe0381c-1209-453d-a6a7-0d34d41f8af9-1597774253782"
+}
